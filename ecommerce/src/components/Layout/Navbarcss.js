@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SidebarMenu from "./SidebarMenu";
 
-import logo from "../../../img/logo2.svg";
+import logo from "../../img/logo2.svg";
 const Navbarcss = () => {
 	return (
 		<React.Fragment>

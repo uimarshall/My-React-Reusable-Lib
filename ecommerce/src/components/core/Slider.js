@@ -1,8 +1,8 @@
 // ul>li.item$*5
 import React from "react";
-import babytoys from "../../../img/babystoys.jpg";
-import clothes from "../../../img/clothes.jpg";
-import tabphone from "../../../img/tab-phone.jpg";
+import babytoys from "../../img/babystoys.jpg";
+import clothes from "../../img/clothes.jpg";
+import tabphone from "../../img/tabphone.jpg";
 const Slider = () => {
 	return (
 		<React.Fragment>
