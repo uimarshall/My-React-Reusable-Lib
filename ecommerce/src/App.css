@@ -347,3 +347,60 @@ body {
 	padding-right: 20px;
 	font-size: 15px;
 }
+
+/*=================================PRODUCT DETAILS CSS========================================*/
+
+.single-product {
+	margin-top: 70px;
+}
+.new-arrival {
+	background: #ea212d;
+	width: 50px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.col-md-7 h2 {
+	color: #555;
+}
+.single-product .fa {
+	margin-top: 70px;
+	color: #ea212d;
+}
+.single-product .price {
+	padding-top: 20px;
+	color: #ea212d;
+	font-size: 26px;
+	font-weight: bold;
+}
+.single-product input {
+	border: 1px solid #ccc;
+	height: 33px;
+	text-align: center;
+	width: 30px;
+	font-weight: bold;
+}
+
+.single-product .btn-primary {
+	background: #ea212d !important;
+	color: #fff;
+	font-size: 15px;
+	margin-left: 20px;
+	border: none;
+	box-shadow: none !important;
+}
+.product-description h6 {
+	margin-top: 50px;
+	color: #ea212d;
+}
+.product-description p {
+	margin-top: 30px;
+}
+.product-description hr {
+	margin-bottom: 50px;
+}
+
+/* .slider .carousel-inner .image-box img {
+	height: 80%;
+} */

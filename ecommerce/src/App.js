@@ -9,6 +9,7 @@ import OnSale from "./components/core/OnSale";
 import NewProducts from "./components/core/NewProducts";
 import WebpageFeatures from "./components/core/WebpageFeatures";
 import Footer from "./components/Layout/Footer";
+import ProductDetails from "./components/core/ProductDetails";
 
 function App() {
 	return (
@@ -20,6 +21,8 @@ function App() {
 				<OnSale />
 				<NewProducts />
 				<WebpageFeatures />
+				<ProductDetails />
+
 				<Footer />
 			</div>
 		</Router>
