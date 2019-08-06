@@ -1,5 +1,6 @@
 import React from "react";
-import tabs from "../../img/tabs.jpg";
+import shirts from "../../img/shirts.jpg";
+
 const OnSale = () => {
 	return (
 		<React.Fragment>
@@ -11,7 +12,7 @@ const OnSale = () => {
 					<div className="row">
 						<div className="col-md-3">
 							<div className="product-top">
-								<img src={tabs} alt="tabs" />
+								<img src={shirts} alt="shirts" />
 								<div className="overlay-right">
 									<button className="btn btn-secondary" title="Quick Shop">
 										<i className="fa fa-eye" aria-hidden="true" />
@@ -36,7 +37,7 @@ const OnSale = () => {
 						</div>
 						<div className="col-md-3">
 							<div className="product-top">
-								<img src={tabs} alt="tabs" />
+								<img src={shirts} alt="shirts" />
 								<div className="overlay-right">
 									<button className="btn btn-secondary" title="Quick Shop">
 										<i className="fa fa-eye" aria-hidden="true" />
@@ -53,15 +54,15 @@ const OnSale = () => {
 								<i className="fa fa-star" aria-hidden="true" />
 								<i className="fa fa-star" aria-hidden="true" />
 								<i className="fa fa-star" aria-hidden="true" />
-								<i className="fa fa-star" aria-hidden="true" />
-								<i className="fa fa-star" aria-hidden="true" />
+								<i className="fa fa-star-half-o" aria-hidden="true" />
+								<i className="fa fa-star-o" aria-hidden="true" />
 								<h3>Dell Laptop</h3>
 								<h5>$40.00</h5>
 							</div>
 						</div>
 						<div className="col-md-3">
 							<div className="product-top">
-								<img src={tabs} alt="tabs" />
+								<img src={shirts} alt="shirts" />
 								<div className="overlay-right">
 									<button className="btn btn-secondary" title="Quick Shop">
 										<i className="fa fa-eye" aria-hidden="true" />
@@ -86,7 +87,7 @@ const OnSale = () => {
 						</div>
 						<div className="col-md-3">
 							<div className="product-top">
-								<img src={tabs} alt="tabs" />
+								<img src={shirts} alt="shirts" />
 								<div className="overlay-right">
 									<button className="btn btn-secondary" title="Quick Shop">
 										<i className="fa fa-eye" aria-hidden="true" />
