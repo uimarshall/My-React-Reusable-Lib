@@ -1,0 +1,151 @@
+body {
+	font-family: "Josefin Slab", serif;
+}
+.header {
+	color: #36a0ff;
+	font-size: 27px;
+	padding: 10px;
+}
+h1,
+h2,
+h3 {
+	font-weight: 900;
+}
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+
+.bigicon {
+	font-size: 30px;
+	color: #36a0ff;
+}
+
+/* Buttons */
+
+.btn-outline-secondary {
+	background-color: transparent !important;
+	border-color: #011627 !important;
+	color: #011627 !important;
+	border-radius: 0;
+	position: relative;
+}
+/* ':before' depicts the is a pseudo element and rep the div b4 the button */
+/* Usually the content of this div is set to empty hence 'content: ""' */
+.btn-outline-secondary:before {
+	content: "";
+	position: absolute;
+	background-color: #83f3ed;
+
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0%;
+	z-index: -1;
+	transition: 0.5s;
+}
+.btn-outline-secondary:hover:before {
+	width: 100%;
+}
+.btn-secondary {
+	background: #011627 !important;
+	border-color: #011627 !important;
+
+	border-radius: 0;
+}
+.btn-secondary:hover {
+	color: #83f3ed !important;
+}
+.btn-primary {
+	background: #83f3ed !important;
+	border-color: #83f3ed !important;
+	color: #011627 !important;
+	border-radius: 0;
+}
+.btn-primary:hover {
+	color: #83f3ed !important;
+
+	background: #011627 !important;
+}
+
+/* Navbar */
+.navbar {
+	background: #36a0ff;
+	border-bottom: 1px solid #eee;
+}
+.nav-link,
+.navbar-brand {
+	color: #fff !important;
+	font-weight: bold;
+}
+.nav-link:hover,
+.navbar-brand:hover {
+	color: #777 !important;
+	font-weight: bold;
+}
+.navbar-brand {
+	font-size: 1.8rem;
+}
+/* Call to Action */
+.call-to-action {
+	background: #011627;
+	color: #fafaff;
+}
+.heading-line {
+	height: 3px;
+	width: 10%;
+	background: #83f3ed;
+}
+
+/* Services */
+.services i {
+	font-size: 2rem;
+	color: #83f3ed;
+}
+
+/* Portfolio */
+.dark {
+	color: #83f3ed;
+	background: #011627;
+	height: 300px;
+}
+.dark i {
+	color: #83f3ed;
+	font-size: 1.3rem;
+}
+.portfolio .img-fluid {
+	height: 300px;
+	object-fit: cover;
+	width: 400px;
+}
+.portfolio .col-lg-3 {
+	position: relative;
+}
+.filter {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #83f3ed;
+	opacity: 0.8;
+}
+
+/* Footer */
+
+.footer {
+	background: #011627;
+	color: #fafaff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+	.navbar .nav-item {
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+		text-align: center;
+	}
+	.call-to-action .container {
+		width: 100% !important;
+	}
+}

@@ -6,6 +6,8 @@ import Header from "./components/core/Header";
 import CallToAction from "./components/core/CallToAction";
 import Services from "./components/core/Services";
 import Portfolio from "./components/core/Portfolio";
+import ContactUs from "./components/core/ContactUs";
+import Footer from "./components/core/Footer";
 
 function App() {
 	return (
@@ -17,6 +19,8 @@ function App() {
 					<CallToAction />
 					<Services />
 					<Portfolio />
+					<ContactUs />
+					<Footer />
 				</div>
 			</Router>
 		</React.Fragment>

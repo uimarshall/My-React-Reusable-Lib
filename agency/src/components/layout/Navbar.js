@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
 	return (
 		<React.Fragment>
-			<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+			<nav className="navbar navbar-expand-lg fixed-top">
 				{/* 'navbar-expand-sm': sm = hamburger will appear in mobile */}
 				{/* md = hamburger will appear in tablet */}
-				<div class="container">
-					<a class="navbar-brand" href="#">
+				<div className="container">
+					<a className="navbar-brand" href="#">
 						Agency
 					</a>
 					<button
-						class="navbar-toggler d-lg-none"
+						className="navbar-toggler d-lg-none"
 						type="button"
 						data-toggle="collapse"
 						data-target="#collapsibleNavId"
@@ -19,42 +19,44 @@ const Navbar = () => {
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon" />
+						<span className="navbar-toggler-icon">
+							<i className="fa fa-bars" />
+						</span>
 					</button>
 					{/* The Real Navbar */}
-					{/* class of 'justify-content-end' will shift the nav menus to right */}
+					{/* className of 'justify-content-end' will shift the nav menus to right */}
 					<div
-						class="collapse navbar-collapse justify-content-end"
+						className="collapse navbar-collapse justify-content-end"
 						id="collapsibleNavId"
 					>
-						<ul class="nav">
-							<li class="nav-item">
-								<Link class="nav-link" to="#">
-									About Us <span class="sr-only">(current)</span>
+						<ul className="nav">
+							<li className="nav-item">
+								<Link className="nav-link" to="#">
+									About Us <span className="sr-only">(current)</span>
 								</Link>
 							</li>
-							<li class="nav-item">
-								<Link class="nav-link" to="#">
+							<li className="nav-item">
+								<Link className="nav-link" to="#">
 									Gallery
 								</Link>
 							</li>
-							<li class="nav-item">
-								<Link class="nav-link" to="#">
+							<li className="nav-item">
+								<Link className="nav-link" to="#">
 									Pricing
 								</Link>
 							</li>
-							<li class="nav-item">
-								<Link class="nav-link" to="#">
+							<li className="nav-item">
+								<Link className="nav-link" to="#">
 									Team
 								</Link>
 							</li>
-							<li class="nav-item">
-								<Link class="nav-link" to="#">
+							<li className="nav-item">
+								<Link className="nav-link" to="#">
 									Services
 								</Link>
 							</li>
-							<li class="nav-item">
-								<Link class="nav-link btn btn-outline-secondary" to="#">
+							<li className="nav-item">
+								<Link className="nav-link btn btn-outline-secondary" to="#">
 									Conatct Us
 								</Link>
 							</li>
