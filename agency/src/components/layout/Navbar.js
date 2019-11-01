@@ -7,9 +7,9 @@ const Navbar = () => {
 				{/* 'navbar-expand-sm': sm = hamburger will appear in mobile */}
 				{/* md = hamburger will appear in tablet */}
 				<div className="container">
-					<a className="navbar-brand" href="#">
+					<Link clLinkssName="navbar-brand" to="/">
 						Agency
-					</a>
+					</Link>
 					<button
 						className="navbar-toggler d-lg-none"
 						type="button"
