@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import Hero from "../layout/Hero";
 import Banner from "../utils/Banner";
 
-const ErrorPage = () => {
+const Rooms = () => {
 	return (
 		<div>
-			<Hero>
-				<Banner title="404" subtitle="sorry, page not found!">
+			<Hero hero="roomsHero">
+				<Banner title="our rooms">
 					<Link to="/" className="btn-primary">
 						return home
 					</Link>
@@ -17,4 +17,4 @@ const ErrorPage = () => {
 	);
 };
 
-export default ErrorPage;
+export default Rooms;

@@ -16,6 +16,10 @@
     --lightBlue: #1175e0;
     --veryDeepBlue: #0b2239;
     --transparentBlue: rgba(64, 172, 241, 0.7);
+    --mainRed: #e7272d;
+    --mainPink: #f26a9e;
+    --offGreen: #1db9a4;
+    --mainOrange: #181818;
     --mainTransition: all 0.3s linear;
     --mainSpacing: 3px;
     --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -69,13 +73,13 @@ h6 {
 }
 
 .btn-primary {
-    display: inline-block;
-    text-decoration: none;
-    letter-spacing: var(--mainSpacing);
+    display: inline-block !important;
+    text-decoration: none !important;
+    letter-spacing: var(--mainSpacing) !important;
     color: var(--mainBlack);
-    background: var(--primaryColor);
+    background: var(--offGreen);
     padding: 0.4rem 0.9rem;
-    border: 3px solid var(--primaryColor);
+    border: 3px solid var(--lightBlue);
     transition: var(--mainTransition);
     text-transform: uppercase;
     cursor: pointer;
@@ -83,7 +87,7 @@ h6 {
 
 .btn-primary:hover {
     background: transparent;
-    color: var(--primaryColor);
+    color: var(--offWhite);
 }
 
 .loading {
@@ -240,14 +244,14 @@ h6 {
 .defaultHero,
 .roomsHero {
     min-height: calc(100vh - 101px);
-    /* background: url("./images/defaultBcg.jpeg") center/cover no-repeat; */
+    background: url("./images/hero-bg-4.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .roomsHero {
-    /* background-image: url("./images/room-2.jpeg"); */
+    background-image: url("./images/hero-bg.jpg");
     min-height: 60vh;
 }
 
@@ -274,7 +278,7 @@ h6 {
 .banner div {
     width: 10rem;
     height: 5px;
-    background: var(--primaryColor);
+    background: var(--lightBlue);
     margin: 1.7rem auto;
 }
 
@@ -323,7 +327,7 @@ h6 {
     width: 5rem;
     height: 5px;
     margin: 0 auto;
-    background: var(--primaryColor);
+    background: var(--transparentBlue);
 }
 
 

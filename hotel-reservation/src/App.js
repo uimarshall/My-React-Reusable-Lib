@@ -2,18 +2,22 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
-import Header from "./components/layout/Header";
+
 import Navbar from "./components/layout/Navbar";
 import ErrorPage from "./components/pages/ErrorPage";
+import Home from "./components/pages/Home";
+import Rooms from "./components/pages/Rooms";
 
 function App() {
 	return (
 		<Router>
 			<div className="App">
 				<Navbar />
-				<Header />
 
 				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route path="/rooms" component={Rooms} />
+					{/* If no route matched, return 'errorPage' */}
 					<Route component={ErrorPage} />
 				</Switch>
 			</div>
