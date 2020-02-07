@@ -356,13 +356,14 @@ h6 {
 
 .service span {
     display: inline-block;
-    color: var(--primaryColor);
+    color: var(--transparentBlue);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
 .services h6 {
     letter-spacing: var(--mainSpacing);
+    text-transform: capitalize;
 }
 
 .services p {

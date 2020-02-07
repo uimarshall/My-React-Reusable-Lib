@@ -7,6 +7,7 @@ import Navbar from "./components/layout/Navbar";
 import ErrorPage from "./components/pages/ErrorPage";
 import Home from "./components/pages/Home";
 import Rooms from "./components/pages/Rooms";
+import ServiceContextProvider from "./contexts/ServiceContext";
 
 function App() {
 	return (
@@ -15,7 +16,10 @@ function App() {
 				<Navbar />
 
 				<Switch>
-					<Route exact path="/" component={Home} />
+					<ServiceContextProvider>
+						<Route exact path="/" component={Home} />
+					</ServiceContextProvider>
+
 					<Route path="/rooms" component={Rooms} />
 					{/* If no route matched, return 'errorPage' */}
 					<Route component={ErrorPage} />
