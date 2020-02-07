@@ -6,9 +6,9 @@ const Navbar = () => {
 	return (
 		<React.Fragment>
 			<nav className="navbar navbar-expand-lg px-3" id="navbar">
-				<a href="#" className="navbar-brand">
+				<Link href="#" className="navbar-brand">
 					<img src={logo} alt="company logo" />
-				</a>
+				</Link>
 				<button
 					class="navbar-toggler"
 					type="button"
