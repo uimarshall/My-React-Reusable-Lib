@@ -4,6 +4,7 @@ const Hero = ({ hero, children }) => {
 	return (
 		<>
 			<header className={hero}>{children}</header>
+			{/* <p></p> */}
 		</>
 	);
 };

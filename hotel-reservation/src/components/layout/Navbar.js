@@ -7,26 +7,26 @@ const Navbar = () => {
 	return (
 		<React.Fragment>
 			<nav className="navbar navbar-expand-lg px-3" id="navbar">
-				<Link href="#" className="navbar-brand">
+				<Link to="#" className="navbar-brand">
 					<img src={logo} alt="company logo" />
-				</Link>{" "}
+				</Link>
 				<button
-					class="navbar-toggler"
+					className="navbar-toggler"
 					type="button"
 					data-toggle="collapse"
 					data-target="#my-nav">
 					<span className="navbar-icon">
 						<i className="fa fa-bars"> </i>
-					</span>{" "}
-				</button>{" "}
-				{/* Collapse Navbar */}{" "}
+					</span>
+				</button>
+				{/* Collapse Navbar */}
 				<div className="collapse navbar-collapse" id="my-nav">
 					<ul className="navbar-nav mx-auto">
 						<li className="nav-item active">
 							<NavLink to="/" className="nav-link">
-								home{" "}
-							</NavLink>{" "}
-						</li>{" "}
+								home
+							</NavLink>
+						</li>
 						<li className="nav-item">
 							<NavLink to="/rooms" className="nav-link">
 								rooms
@@ -45,29 +45,21 @@ const Navbar = () => {
 					</ul>
 					{/* Navbar Icons */}
 					<div className="nav-icons d-none d-lg-block">
-						<Link to="" className="nav-icon mx-2 p-2 rounded-circle">
+						<Link to="#" className="nav-icon mx-2 p-2 rounded-circle">
 							{/* fa-fw = fixed width */}
-							<i className="fa fa-twitter fa-fw" title="twitter">
-								{" "}
-							</i>
+							<i className="fa fa-twitter fa-fw" title="twitter"></i>
 						</Link>
 						<Link
-							to=""
+							to="#"
 							className="nav-icon mx-2 p-2 rounded-circle"
 							title="twitter">
-							<i className="fa fa-facebook fa-fw" title="facebook">
-								{" "}
-							</i>
+							<i className="fa fa-facebook fa-fw" title="facebook"></i>
 						</Link>
-						<Link to="" className="nav-icon mx-2 p-2 rounded-circle">
-							<i className="fa fa-instagram fa-fw" title="instagram">
-								{" "}
-							</i>
+						<Link to="#" className="nav-icon mx-2 p-2 rounded-circle">
+							<i className="fa fa-instagram fa-fw" title="instagram"></i>
 						</Link>
-						<Link to="" className="nav-icon mx-2 p-2 rounded-circle">
-							<i className="fa fa-linkedin fa-fw" title="linkedin">
-								{" "}
-							</i>
+						<Link to="#" className="nav-icon mx-2 p-2 rounded-circle">
+							<i className="fa fa-linkedin fa-fw" title="linkedin"></i>
 						</Link>
 					</div>
 				</div>
