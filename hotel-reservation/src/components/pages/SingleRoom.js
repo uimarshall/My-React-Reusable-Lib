@@ -5,6 +5,7 @@ import Hero from "../layout/Hero";
 import Banner from "../utils/Banner";
 import defaultBgimg from "../../images/room-3.jpg";
 import { RoomContext } from "../../contexts/RoomContext";
+import StyledHero from "../utils/StyledHero";
 
 // const SingleRoom = props => {
 // 	const { getRoom } = useContext(RoomContext);
@@ -81,13 +82,22 @@ export class SingleRoom extends Component {
 			images
 		} = room;
 		return (
-			<Hero hero="roomsHero">
-				<Banner title={`${name} room`}>
-					<Link to="/rooms" className="btn-primary">
-						back to rooms
-					</Link>
-				</Banner>
-			</Hero>
+			<>
+				<StyledHero img={images[0] || this.state.defaultBgimg}>
+					<Banner title={`${name} room`}>
+						<Link to="/rooms" className="btn-primary">
+							back to rooms
+						</Link>
+					</Banner>
+				</StyledHero>
+				<section className="single-room">
+					<div className="single-room-images">
+						{images.map((item, index) => (
+							<img key={index} src={item} alt={name} />
+						))}
+					</div>
+				</section>
+			</>
 		);
 	}
 }
