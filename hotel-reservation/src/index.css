@@ -24,8 +24,8 @@
     --mainSpacing: 3px;
     --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
     --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
-    --lightGreen: #6AFDEF;
-    --lightGrey: #F4EEEB;
+    --lightGreen: #6afdef;
+    --lightGrey: #f4eeeb;
 }
 
 
@@ -623,7 +623,7 @@ h6 {
 /* end of roomlist */
 
 
-/*  rooms fitler*/
+/*  rooms filter*/
 
 .filter-container {
     padding: 5rem 0;
@@ -639,7 +639,7 @@ h6 {
 }
 
 .form-group {
-    text-transform: capitalize;
+    text-transform: capitalize !important;
 }
 
 .form-group label {
@@ -649,9 +649,9 @@ h6 {
 }
 
 .form-control {
-    width: 100%;
-    background: transparent;
-    font-size: 1rem;
+    width: 100% !important;
+    background: transparent !important;
+    font-size: 1rem !important;
 }
 
 .size-inputs {

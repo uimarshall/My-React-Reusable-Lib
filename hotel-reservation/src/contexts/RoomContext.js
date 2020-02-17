@@ -56,17 +56,31 @@ class RoomContextProvider extends Component {
 		rooms: [],
 		sortedRooms: [],
 		featuredRooms: [],
-		loading: true
+		loading: true,
+		type: "all",
+		capacity: 1,
+		price: 0,
+		minPrice: 0,
+		maxPrice: 0,
+		minSize: 0,
+		maxSize: 0,
+		breakfast: false,
+		pets: false
 	};
 
 	componentDidMount() {
 		let rooms = this.requiredData(items);
 		let featuredRooms = rooms.filter(room => room.featured === true);
+		let maxPrice = Math.max(...rooms.map(room => room.price));
+		let maxSize = Math.max(...rooms.map(room => room.size));
 		this.setState({
 			rooms,
 			sortedRooms: rooms,
 			featuredRooms,
-			loading: false
+			loading: false,
+			price: maxPrice,
+			maxPrice,
+			maxSize
 		});
 	}
 
@@ -86,13 +100,47 @@ class RoomContextProvider extends Component {
 		const room = tempRooms.find(room => room.slug === slug);
 		return room;
 	};
+	name;
+	// Handlechange
+	handleChange = e => {
+		const type = e.target.type;
+		const name = e.target.name;
+		const value = e.target.value;
+	};
+
+	// Filter Rooms
+	filterRooms = () => {
+		console.log("hello");
+	};
+
 	render() {
 		return (
-			<RoomContext.Provider value={{ ...this.state, getRoom: this.getRoom }}>
+			<RoomContext.Provider
+				value={{
+					...this.state,
+					getRoom: this.getRoom,
+					handleChange: this.handleChange
+				}}>
 				{this.props.children}
 			</RoomContext.Provider>
 		);
 	}
+}
+
+export const RoomContextConsumer = RoomContext.Consumer;
+
+// So we export the context we want to consume(RoomContext),d component that will provide the context/data(RoomContextProvider)
+// as well as the contextConsumer that will wrap any component that subscribe to the context
+
+// Higher Order Component(HOC)
+export function withRoomContextConsumer(Component) {
+	return function ConsumerWrapper(props) {
+		return (
+			<RoomContextConsumer>
+				{value => <Component {...props} context={value} />}
+			</RoomContextConsumer>
+		);
+	};
 }
 
 export default RoomContextProvider;

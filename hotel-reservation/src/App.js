@@ -17,17 +17,17 @@ function App() {
 			<div className="App">
 				<Navbar />
 
-				<Switch>
-					<ServiceContextProvider>
-						<RoomContextProvider>
+				<ServiceContextProvider>
+					<RoomContextProvider>
+						<Switch>
 							<Route exact path="/" component={Home} />
 							<Route path="/rooms/:slug" component={SingleRoom} />
 							<Route path="/rooms" component={Rooms} />
 							{/* If no route matched, return 'errorPage' */}
 							<Route component={ErrorPage} />
-						</RoomContextProvider>
-					</ServiceContextProvider>
-				</Switch>
+						</Switch>
+					</RoomContextProvider>
+				</ServiceContextProvider>
 			</div>
 		</Router>
 	);
