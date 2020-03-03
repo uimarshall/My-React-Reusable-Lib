@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette|Josefin+Sans|Oswald&display=swap");
+:root {
+    --mainBlue: #40acf1;
+    --transparentBlue: rgba(64, 172, 241, 0.7);
+    --transparentSkyBlue: #d6e2fc;
+    --mainWhite: #ffffff;
+    --transparentGray: #eeeeee;
+    --mainBlack: #292f36;
+    --mainGrey: #a7a7ad;
+    --lightGrey: rgb(216, 214, 214);
+    --lighterGrey: #ececfa;
+    --midGray: #35465c;
+    --deepGray: #15202b;
+    --mainYellow: #e3b505;
+    --lightYellow: #ffb850;
+    --transparentGreen: #19e5e5;
+    --lightPurple: #9971d3;
+    --mainPurple: #38165f;
+    --roboto: "Roboto", sans-serif;
+    --josefin: "Josefin Sans", sans-serif;
+    --courgette: "Courgette", sans-serif;
+    --oswald: "Oswald", sans-serif;
+}
+
+
+/** Generally, 1em = 12pt = 16px = 100%. */
+
+
+/* Globals */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+}
+
+section {
+    display: flex;
+    position: absolute;
+    z-index: 4;
+}
+
+.section1 {
+    width: 27vw;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+
+
+/* .links {
+    text-decoration: none;
+} */
+
+
+/* End Globals */
+
+
+/* Navbar */
+
+
+/* Brand Logo */
+
+.logo {
+    width: 7vw;
+    height: 15vh;
+}
+
+.menu-bar {
+    width: 68vw;
+    display: inline-block;
+}
+
+.search-box {
+    margin-left: 18%;
+    margin-top: 5%;
+    width: 30vw;
+    height: 7vh;
+    border: 1px ridge var(--mainGrey);
+}
+
+.search-box[placeholder] {
+    padding-left: 0.5em;
+}
+
+.btn-search {
+    width: 5vw;
+    height: 7vh;
+    background-color: var(--transparentGreen);
+    border: 0px;
+}
+
+.call-icon {
+    height: 4.5vh;
+    margin-left: 5%;
+}
+
+.tel-no {
+    font-size: 1.5vw;
+    font-family: fantasy;
+}
+
+nav {
+    margin-top: 4%;
+    width: 100%;
+    height: 2%;
+    background-color: var(--mainWhite);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item {
+    margin-top: 8vh;
+    padding: 3% 3%;
+    text-decoration: none;
+    background-color: var(--mainBlack);
+    color: var(--mainWhite);
+    font-family: var(--oswald);
+    font-size: 1.5vw;
+    box-shadow: 10px 15px 50px black;
+}
+
+.menu-item:hover {
+    background-color: #1d9550;
+    box-shadow: none;
+}
+
+
+/*================= Categories Navigation============== */
+
+.cat-navigation {
+    margin-top: 2vh;
+    width: 100%;
+    height: 9vh;
+    background-color: var(--transparentGreen);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle {
+    height: 5vh;
+    width: 3vw;
+    margin-left: 3%;
+}
+
+.categories {
+    margin-left: 3%;
+}
+
+.cat-main-menu {
+    background-color: var(--lighterGrey);
+    display: block;
+    padding: 4% 4%;
+    border-bottom: 1px solid var(--mainGrey);
+    padding-left: 4%;
+}
+
+.cat-main-menu:hover {
+    background-color: var(--mainWhite);
+    cursor: pointer;
+}
+
+
+/*=======================Slider=================== */
+
+.slider {
+    background-color: var(--lighterGrey);
+    width: 68vw;
+    height: 52vh;
+    margin-top: 7%;
+    overflow: hidden;
+    margin-top: 15vh;
+}
+
+.slider .slides {
+    width: 200vw;
+    height: 52vh;
+    display: flex;
+}
+
+.slide1 {
+    width: 68vw;
+    height: 52vh;
+}
+
+.slide1 .img-1 {
+    width: 33vw;
+    height: 38vh;
+    display: inline-block;
+    margin-top: 4%;
+}
+
+.slide1 .img-2 {
+    width: 38vw;
+    height: 50vh;
+}
+
+.slide1 .img-3 {
+    width: 38vw;
+    height: 52vh;
+}
+
+.slide-info {
+    position: absolute;
+    width: 26vw;
+    height: 52vh;
+    margin-left: 36vw;
+}
+
+.slide-info h1 {
+    color: var(--transparentGreen);
+    margin-top: 10vh;
+}
+
+.slide-info p {
+    font-family: var(--courgette);
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+.slide-info .btn-shop-now {
+    color: var(--mainWhite);
+    background-color: #313030;
+    padding: 4%;
+    border-radius: 10px;
+}
