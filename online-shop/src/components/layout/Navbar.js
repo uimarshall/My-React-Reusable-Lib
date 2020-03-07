@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SearchBox from "../utils/SearchBox";
 import PhoneCall from "../utils/PhoneCall";
-import Slider from "../utils/Slider";
 
 const Navbar = () => {
 	return (
-		<div className="menu-bar">
+		<>
 			<SearchBox />
 			<PhoneCall />
 			<nav>
@@ -29,8 +28,7 @@ const Navbar = () => {
 					Item(s)
 				</Link>
 			</nav>
-			<Slider />
-		</div>
+		</>
 	);
 };
 

@@ -34,16 +34,19 @@
         let count = 1;
         $(document).ready(function() {
             // Set interval for slides
-            setInterval(() => {
+            setInterval(function() {
                 $slides.animate({
-                    "margin-left": "-68vw"
-                }, 1200, function() {
-                    connt++;
-                    if (count === 4) {
-                        $slides.css("margin-left", 0);
-                        connt = 1;
+                        "margin-left": "-=68vw"
+                    },
+                    1200,
+                    function() {
+                        count++;
+                        if (count === 4) {
+                            $slides.css("margin-left", 0);
+                            connt = 1;
+                        }
                     }
-                });
+                );
             }, 4000);
         });
     </script>
